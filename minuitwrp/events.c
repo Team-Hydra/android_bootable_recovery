@@ -172,7 +172,7 @@ static int vk_init(struct ev *e)
       e->ignored = 1;
 #else
     // Blacklist these "input" devices
-    if (strcmp(e->deviceName, "bma250") == 0 || strcmp(e->deviceName, "bma150") == 0)
+    if (strcmp(e->deviceName, "bma250") == 0 || strcmp(e->deviceName, "bma150") == 0 || strcmp(e->deviceName, "accelerometer") == 0)
     {
         e->ignored = 1;
     }
